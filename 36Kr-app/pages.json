@@ -6,11 +6,53 @@
 				"navigationBarTitleText": "uni-app"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/kryptonOpening/kryptonOpening",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/find/find",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/ventureCapital/ventureCapital",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/main/main",
+            "style" : {}
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle":"custom"//取消头部导航条
+	},
+	"tabBar":{
+		"backgroundColor":"#FFFFFF",
+		"list":[
+			{	
+				"text":"首页",
+				"pagePath":"pages/index/index"
+			},
+			{
+				"text":"开氪",
+				"pagePath":"pages/kryptonOpening/kryptonOpening"
+			},
+			{
+				"text":"发现",
+				"pagePath":"pages/find/find"
+			},
+			{
+				"text":"创投",
+				"pagePath":"pages/ventureCapital/ventureCapital"
+			},
+			{
+				"text":"我的",
+				"pagePath":"pages/main/main"
+			}
+		]
 	}
 }
