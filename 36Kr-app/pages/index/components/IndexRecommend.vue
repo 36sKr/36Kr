@@ -1,16 +1,35 @@
 <template>
 	<view class="">
-		<view class="uni-padding-wrap">
-			<view class="page-section swiper">
-				<view class="page-section-spacing">
-					<swiper class="swiper" :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :duration="duration">
-						<swiper-item v-for="(item,index) in bannerList" :key='index'>
-							<view class="swiper-item uni-bg-red">
-								<image :src="item.templateMaterial.widgetImage" mode=""></image>
-							</view>
-						</swiper-item>
-					</swiper>
+		<view class="page-section-spacing swiper-cont">
+			<swiper @change="bannerFn" class="swiper" :circular=true :autoplay="autoplay" :interval="interval" :duration="duration">
+				<swiper-item v-for="(item,index) in bannerList" :key='index'>
+					<view class="swiper-item uni-bg-red">
+						<image :src="item.templateMaterial.widgetImage" mode=""></image>
+					</view>
+				</swiper-item>
+			</swiper>
+			<view class="line-cont">
+				<view 
+					v-for="(item,index) in bannerList.length" 
+					:class="idx===index?'active':''"
+				>
 				</view>
+			</view>
+		</view>
+		<view class="itemList" 
+			v-for="(item,index) in itemList" 
+			:key="index"
+			@click="Jump(index)"
+		>
+			<view class="itemListInfo">
+				<view class="itemListInfoTitle">{{item.templateMaterial.widgetTitle}}</view>
+				<view class="itemListInfoAuthor">
+					<view>{{item.templateMaterial.authorName}}</view>
+					<view class="itemListInfoRecommend">{{item.templateMaterial.templateType}}收藏</view>					
+				</view>
+			</view>
+			<view class="itemListImg">
+				<image :src="item.templateMaterial.widgetImage" mode=""></image>
 			</view>
 		</view>
 	</view>
@@ -24,17 +43,28 @@
 				indicatorDots: true,
 				autoplay: true,
 				interval: 2000,
-				duration: 500
+				duration: 500,
+				idx : 0,
+				itemList:[]
 			}
 		},
 		onLoad() {
-			console.log(1)
+			// 请求轮播数据
 			uni.request({
 				url: 'http://rap2api.taobao.org/app/mock/234738/get/home/recommend/carousel',
 				method: 'GET',
 				success: res => {
-					console.log(res.data.data.bannerList)
+					// console.log(res.data.data.bannerList)
 					this.bannerList = res.data.data.bannerList
+				},
+			});
+			// 请求列表数据
+			uni.request({
+				url: 'http://rap2api.taobao.org/app/mock/234738/get/home/recommend/list',
+				method: 'GET',
+				success: res => {
+					// console.log(res.data.data.itemList)
+					this.itemList = res.data.data.itemList
 				},
 			});
 		},
@@ -50,10 +80,77 @@
 			},
 			durationChange(e) {
 				this.duration = e.target.value
+			},
+			bannerFn(ev){
+				// console.log(ev.detail)
+				this.idx = ev.detail.current
+			},
+			Jump(i){
+				uni.navigateTo({
+					url:"../../components/IndexListPages?id="+i
+				})
 			}
 		}
 	}
 </script>
 
 <style>
+	.swiper-item image{
+		width: 100%;
+		height: 334upx;
+	}
+	.swiper-cont{
+		position: relative;
+		margin-bottom: 30upx;
+	}
+	.line-cont{
+		position: absolute;
+		bottom:-28upx;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+	.line-cont>view{
+		width: 20upx;
+		height: 20upx;
+		background:#dedede;
+		margin: 0 10upx;
+		transform: rotate(45deg);
+	}
+	.line-cont>view.active{
+		background: #4084ff;
+	}
+	
+	/* 列表 */
+	.itemList{
+		margin-top: 20px;
+		display: flex;
+		justify-content: space-between;
+	}
+	/* 列表信息 */
+	.itemListInfo{
+		width: 70%;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+	.itemListInfoTitle{
+		font-size: 32upx;
+		color: #333;
+	}
+	.itemListInfoAuthor{
+		display: flex;
+		justify-content: space-between;
+		font-size: 12upx;
+		color: #949494;
+	}
+	/* 列表图片 */
+	.itemListImg{
+		width: 190upx;
+		height: 190upx;
+	}
+	.itemListImg>image{
+		width: 100%;
+		height: 100%;
+	}
 </style>
