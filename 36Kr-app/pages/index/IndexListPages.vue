@@ -16,7 +16,6 @@
 			<view class="IndexListPagesFooterSc iconfont icon-xingxing"></view>
 			<view class="IndexListPagesFooterFx iconfont icon-fenxiang"></view>
 		</view>
-		来了老弟
 	</view>
 </template>
 
@@ -28,8 +27,7 @@
 				
 			}
 		},
-		created(options){
-			console.log(111111111)
+		onLoad(options){
 			console.log(options.id)//得到当前列表的下标
 			uni.request({
 				url: 'http://rap2api.taobao.org/app/mock/234738/get/home/recommend/list',

@@ -37,6 +37,7 @@
 	</view>
 </template>
 <script>
+	
 	export default{
 		data(){
 			return{
@@ -118,7 +119,7 @@
 			},
 			Jump(i){
 				uni.navigateTo({
-					url:"../../components/IndexListPages?id="+i
+					url:"IndexListPages?id="+i
 				})
 			}
 		}

@@ -43,8 +43,11 @@
 		{
 			"path" : "pages/index/components/IndexRecommend",
 			"style" : {}
+		},
+		{
+			"path":"pages/index/IndexListPages",
+			"style":{}
 		}
-		
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
