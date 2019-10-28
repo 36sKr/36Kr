@@ -31,10 +31,12 @@
 			console.log(options.id)//得到当前列表的下标
 			uni.request({
 				url: 'http://rap2api.taobao.org/app/mock/234738/get/home/recommend/list',
+				// url: './index.components/IndexRecommend.',
 				method: 'GET',
 				success: res => {
 					this.PagesData = res.data.data.itemList[options.id]// 保存当前数据
 					console.log(this.PagesData)
+					// console.log(res)
 				}
 			});
 		},

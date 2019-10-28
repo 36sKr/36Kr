@@ -18,7 +18,7 @@
 		</view>
 		<view class="itemList" 
 			v-for="(item,index) in itemList" 
-			:key="index"
+			
 			@click="Jump(index)"
 		>
 			<view class="itemListInfo">
@@ -29,7 +29,7 @@
 				</view>
 			</view>
 			<view class="itemListImg">
-				<image :src="item.templateMaterial.widgetImage" mode=""></image>
+				<image :src="item.templateMaterial.widgetImage"></image>
 			</view>
 		</view>
 	</view>
@@ -89,7 +89,8 @@
 						})
 					}else{
 						// 重新保存到数据堆里面  当前数据            重新获取到的数据
-						this.itemList = [...this.itemList,...res.data.data.itemList]						
+						this.itemList = [...this.itemList,...res.data.data.itemList]
+						console.log(this.itemList)
 					}
 					// 当执行到改方法的时候,说明已经请求完数据的操作,
 					// 停止了正在加载中的操作
