@@ -22,6 +22,14 @@
             "path" : "pages/main/main",
             "style" : {}
         }
+        ,{
+            "path" : "pages/index/hotlist/hotlist",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/components/listItem",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
