@@ -45,7 +45,8 @@
 				interval: 2000,
 				duration: 500,
 				idx : 0,
-				itemList:[]
+				itemList:[],
+				p:1//当前分页页数
 			}
 		},
 		onLoad() {
@@ -58,7 +59,7 @@
 					this.bannerList = res.data.data.bannerList
 				},
 			});
-			// 请求列表数据
+			//请求列表数据
 			uni.request({
 				url: 'http://rap2api.taobao.org/app/mock/234738/get/home/recommend/list',
 				method: 'GET',
@@ -66,6 +67,34 @@
 					// console.log(res.data.data.itemList)
 					this.itemList = res.data.data.itemList
 				},
+			});
+		},
+		// 页面滚动到底部事件
+		onReachBottom() {
+			// 提示数据加载事件
+			uni.showLoading({
+				title:'正在加载中...'
+			})
+			// 请求列表数据
+			this.p++;
+			uni.request({
+				url: `http://rap2api.taobao.org/app/mock/234738/get/home/recommend/list?_page=${this.p}&_limit=${this.itemList.length}`,
+				method: 'GET',
+				success: res => {
+					console.log(res.data.data.itemList)
+					// 判断数据的length为0的时候,数据就停止请求
+					if(res.data.data.itemList.length==0){
+						uni.showToast({
+							title:"我是有底线的"
+						})
+					}else{
+						// 重新保存到数据堆里面  当前数据            重新获取到的数据
+						this.itemList = [...this.itemList,...res.data.data.itemList]						
+					}
+					// 当执行到改方法的时候,说明已经请求完数据的操作,
+					// 停止了正在加载中的操作
+					uni.hideLoading()
+				}
 			});
 		},
 		methods:{
@@ -111,8 +140,8 @@
 		justify-content: center;
 	}
 	.line-cont>view{
-		width: 20upx;
-		height: 20upx;
+		width: 15upx;
+		height: 15upx;
 		background:#dedede;
 		margin: 0 10upx;
 		transform: rotate(45deg);
