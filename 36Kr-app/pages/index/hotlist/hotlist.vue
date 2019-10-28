@@ -22,6 +22,7 @@
 		components:{
 			listItem
 		}
+			
 	}
 </script>
 
