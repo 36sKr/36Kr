@@ -9,16 +9,17 @@
 				</swiper-item>
 			</swiper>
 			<view class="line-cont">
-				<view 
+				<view
 					v-for="(item,index) in bannerList.length" 
 					:class="idx===index?'active':''"
+					:key="index"
 				>
 				</view>
 			</view>
 		</view>
 		<view class="itemList" 
 			v-for="(item,index) in itemList" 
-			
+			:key="index"
 			@click="Jump(index)"
 		>
 			<view class="itemListInfo">
@@ -35,6 +36,7 @@
 	</view>
 </template>
 <script>
+	
 	export default{
 		data(){
 			return{
@@ -44,12 +46,12 @@
 				autoplay: true,
 				interval: 2000,
 				duration: 500,
-				idx : 0,
-				itemList:[],
+				idx : 0,//轮播小点下标
+				itemList:[],//列表数据
 				p:1//当前分页页数
 			}
 		},
-		onLoad() {
+		created() {
 			// 请求轮播数据
 			uni.request({
 				url: 'http://rap2api.taobao.org/app/mock/234738/get/home/recommend/carousel',
@@ -117,14 +119,14 @@
 			},
 			Jump(i){
 				uni.navigateTo({
-					url:"../../components/IndexListPages?id="+i
+					url:"../components/IndexListPages?id="+i
 				})
 			}
 		}
 	}
 </script>
 
-<style>
+<style scoped>
 	.swiper-item image{
 		width: 100%;
 		height: 334upx;
@@ -159,7 +161,7 @@
 	}
 	/* 列表信息 */
 	.itemListInfo{
-		width: 70%;
+		width: 65%;
 		display: flex;
 		justify-content: space-between;
 		flex-direction: column;
@@ -176,7 +178,7 @@
 	}
 	/* 列表图片 */
 	.itemListImg{
-		width: 190upx;
+		width: 30%;
 		height: 190upx;
 	}
 	.itemListImg>image{

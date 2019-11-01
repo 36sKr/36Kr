@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view class="CT">
 		info
 	</view>
 </template>
@@ -18,5 +18,7 @@
 </script>
 
 <style>
-
+.CT{
+	padding:50upx 0 0;
+}
 </style>

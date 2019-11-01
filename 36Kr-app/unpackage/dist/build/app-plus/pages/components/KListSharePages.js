@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"KListPages{ padding:0 ",[0,20],"; }\n.",[1],"KListPagesHeader{ display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }\n",],undefined,{path:"./pages/components/KListSharePages.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/components/KListSharePages.wxml') } }));

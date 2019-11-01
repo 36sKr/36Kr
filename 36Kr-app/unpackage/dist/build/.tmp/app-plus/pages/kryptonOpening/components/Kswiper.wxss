@@ -1,0 +1,37 @@
+
+.swiper-item image.data-v-5b0d9230{
+	width: 100%;
+	height: 334rpx;
+}
+.swiper-cont.data-v-5b0d9230{
+	background: #FFFFFF;
+	padding: 0 20rpx;
+	position: relative;
+	padding-bottom: 60rpx;
+}
+.line-cont.data-v-5b0d9230{
+	position: absolute;
+	bottom:20rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.line-cont>view.data-v-5b0d9230{
+	width: 15rpx;
+	height: 15rpx;
+	background:#dedede;
+	margin: 0 10rpx;
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+.line-cont>view.active.data-v-5b0d9230{
+	background: #4084ff;
+}
+

@@ -1,0 +1,150 @@
+
+.klistlimitstitBox{
+	padding: 0 20rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.klistlimitstitBox>.klistlimitstit{
+	/* text-align: center; */
+	margin: 0 auto;
+}
+.LimitedBox{
+	padding: 0 20rpx;
+	margin-top: 20rpx;
+	background: #FFFFFF;
+}
+.LimitedTit{
+	font-size:40rpx;
+	line-height: 80rpx;
+}
+.LimitedList{
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	margin-bottom:40rpx;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	height:260rpx;
+}
+.LimitedListImg{
+	width:30%;
+	height:260rpx;
+}
+.LimitedListImg>image{
+	border-radius:5rpx;
+	width:100%;
+	height:100%;
+}
+.LimitedListInfo{
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	width:67%;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-webkit-flex-direction:column;
+	    -ms-flex-direction:column;
+	        flex-direction:column;
+	position: relative;
+}
+/* 热卖标题 */
+.LimitedListInfoName{
+	font-size: 30rpx;
+	line-height:50rpx;
+}
+/* 热卖信息 */
+.LimitedListInfoIntro{
+	margin: 15rpx 0;
+	font-size: 28rpx;
+	line-height:28rpx;
+	color:#999;
+}
+/* 热卖课讲 */
+.LimitedListInfoChapters{
+	line-height:24rpx;
+	font-size:24rpx;
+	line-height:36rpx;
+	width:100rpx;
+	padding:2rpx 5rpx;
+	background:#f4f4f4;
+	color:#999;
+	text-align:center;
+	border-radius:25rpx;
+}
+/* 限时热卖 */
+.LimitedListInfoType{
+	line-height:18rpx;
+	background:#ff6773;
+	color:#fff;
+	padding:5rpx 10rpx;
+	font-size:18rpx;
+	width:100rpx;
+	border-radius:5rpx;
+	margin-top: 35rpx;
+}
+/* 热卖价格 */
+.LimitedListInfoPrice{
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	position: absolute;
+	bottom: 0;
+}
+/* 此样式是他有限时优惠时的显示样式 */
+.LimitedListInfoPriceC{
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin-right:20rpx;
+	color:#ff6773;
+	font-size:22rpx;
+}
+/* 此样式是他没有限时优惠时的显示样式 */
+.LimitedListInfoPrice1{
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin-right:20rpx;
+	color:#007AFF;
+	font-size:22rpx;
+}
+.LimitedListInfoPrice1>view,.LimitedListInfoPriceC>view{
+	font-size:36rpx;
+}
+/* 此样式是他有限时优惠时的显示他的原价 */
+.LimitedListInfoPrice2{
+	color: #999;
+	text-decoration:line-through;
+}
+.LimitedLook{
+	text-align: center;
+	color: #999;
+	padding:10rpx 0;
+}
+
+

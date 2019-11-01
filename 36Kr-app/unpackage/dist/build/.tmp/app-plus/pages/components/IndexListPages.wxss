@@ -1,0 +1,52 @@
+
+.IndexListPagesHeader.data-v-62f6aaeb{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:100rpx;
+	background: #fff;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	font-size: 24rpx;
+}
+.IndexListPagesInfo.data-v-62f6aaeb{
+	margin-top: 100rpx;
+}
+.IndexListPagesFooter.data-v-62f6aaeb{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	width: 100%;
+	height: 100rpx;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+	border-top: 1px solid #EEEEEE;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.IndexListPagesFooterInput.data-v-62f6aaeb{
+	padding: 15rpx;
+	background: #EEEEEE;
+	font-size: 12rpx;
+	color: #999999;
+}
+

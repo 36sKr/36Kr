@@ -1,0 +1,1 @@
+<view class="KOpen"><view class="KOpenTit">开氪</view><kswiper vue-id="1" bind:__l="__l"></kswiper><k-list vue-id="2" bind:__l="__l"></k-list></view>

@@ -1,0 +1,53 @@
+/* 公用样式 */
+
+
+.flex{
+	display: flex;
+}
+.flex-center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.flex-ends{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+/* 配置图标 */
+.uni-btn-icon{
+	display: inline-block;
+	vertical-align: middle;
+}
+.fnc-24{
+	font-size: 24upx;
+}
+.fnc-26{
+	font-size: 26upx;
+}
+.fnc-28{
+	font-size: 28upx;
+}
+.fnc-30{
+	font-size: 30upx;
+}
+.fnc-32{
+	font-size: 32upx;
+}
+.fnc-34{
+	font-size: 34upx;
+}
+.fnc-36{
+	font-size: 36upx;
+}
+
+.fnc-22{
+	font-size: 22upx;
+}
+.fnc-20{
+	font-size: 20upx;
+}
+
+.color{
+	color: #8e9196;
+}

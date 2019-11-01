@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "kswiper": "/pages/kryptonOpening/components/Kswiper",
+    "k-list": "/pages/kryptonOpening/components/KList"
+  }
+}

@@ -1,0 +1,156 @@
+
+::-webkit-scrollbar{display:none}
+.Main{
+	padding:50rpx 0 0;
+	height: 100%;
+	background: #FFFFFF;
+	/* padding: 40upx; */
+	overflow-x: hidden;
+}
+.MainLoginBox{
+	margin: 0 25rpx;
+	height: 500rpx;
+	-webkit-box-shadow: 0rpx 0rpx 6rpx 6rpx #EEEEEE;
+	        box-shadow: 0rpx 0rpx 6rpx 6rpx #EEEEEE;
+	margin-bottom: 50rpx;
+}
+.MainLogin{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	height: 50%;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.MainLoginImg{
+	font-size: 100rpx;
+	margin:0 40rpx;
+}
+.MainLoginCheck{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	color: #999;
+}
+.MainLoginyoujiantou{
+	font-size: 30px;
+	color: #999;
+}
+.MainLoginText{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	position: relative;
+}
+.MainLoginText1{
+	font-size: 40rpx;
+}
+.MainLoginText2{
+	font-size: 20rpx;
+	color: #999;
+}
+.MainRenWu{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+	/* align-items: center; */
+}
+.MainRenWuBox{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.MainRenWuIcon{
+	font-size: 80rpx;
+}
+.MainRenWuTitle{
+	font-size: 30rpx;
+}
+.MainRenWuTitleInfo1{
+	color: red;
+	font-size: 24rpx;
+}
+.MainRenWuTitleInfo2{
+	color: #999;
+	font-size: 24rpx;
+}
+.icon-kbishangcheng{
+	/* color: #000000!important; */
+}
+.MainListBox{
+	background: #EEEEEE;
+}
+.MainListImg{
+	padding: 0 25rpx;
+	background: #FFFFFF;
+	width: 100%;
+	height: 200rpx;
+}
+.MainListImg>image{
+	height: 100%;
+	width: 100%;
+}
+.MainList1,.MainList2,.MainList3{
+	padding: 0 25rpx;
+	margin-bottom: 20rpx;
+	background: #fff;
+}
+.MainList1>view,.MainList2>view,.MainList3>view{
+	line-height: 100rpx;
+	font-size: 50rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.icon{
+	font-size: 50rpx;
+	color: #778899;
+	height: 100rpx;
+	padding-left:20rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.icon>view{
+	font-size: 40rpx;
+	padding-left:20rpx;
+	color: #000000;
+}
+

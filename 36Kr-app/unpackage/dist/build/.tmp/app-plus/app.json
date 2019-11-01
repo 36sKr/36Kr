@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/components/IndexFollow",
+    "pages/kryptonOpening/kryptonOpening",
+    "pages/find/find",
+    "pages/ventureCapital/ventureCapital",
+    "pages/main/main",
+    "pages/index/hotlist/hotlist",
+    "pages/components/listItem",
+    "pages/components/IndexListPages",
+    "pages/index/components/IndexRecommend",
+    "pages/kryptonOpening/components/Kswiper",
+    "pages/components/KswiperPages",
+    "pages/kryptonOpening/components/KList",
+    "pages/components/KListLimitPages",
+    "pages/kryptonOpening/components/KListLimits",
+    "pages/components/KListSharePages",
+    "pages/kryptonOpening/components/KListShares",
+    "pages/login/forget",
+    "pages/login/login",
+    "pages/login/register",
+    "pages/main/components/MainPages"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/img/home.png",
+        "selectedIconPath": "static/img/homeActive.png"
+      },
+      {
+        "text": "开氪",
+        "pagePath": "pages/kryptonOpening/kryptonOpening",
+        "iconPath": "static/img/kaike.png",
+        "selectedIconPath": "static/img/kaikeActive.png"
+      },
+      {
+        "text": "发现",
+        "pagePath": "pages/find/find",
+        "iconPath": "static/img/find.png",
+        "selectedIconPath": "static/img/findActive.png"
+      },
+      {
+        "text": "创投",
+        "pagePath": "pages/ventureCapital/ventureCapital",
+        "iconPath": "static/img/chuangtou.png",
+        "selectedIconPath": "static/img/chuangtouActive.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/main/main",
+        "iconPath": "static/img/main.png",
+        "selectedIconPath": "static/img/mainActive.png"
+      }
+    ]
+  },
+  "nvueCompiler": "uni-app",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "36Kr-app",
+  "compilerVersion": "2.3.3",
+  "usingComponents": {}
+}

@@ -9,6 +9,8 @@ Vue.config.productionTip = false
 
 App.mpType = 'app'
 
+Vue.prototype.HLP_Url="http://rap2api.taobao.org/app/mock/234738/"
+
 const app = new Vue({
     ...App
 })

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "uni-app",
+  "usingComponents": {
+    "hotlist": "/pages/index/hotlist/hotlist",
+    "index-recommend": "/pages/index/components/IndexRecommend"
+  }
+}

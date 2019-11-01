@@ -1,0 +1,15 @@
+
+.KListPages{
+	padding:0 20rpx;
+}
+.KListPagesHeader{
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+

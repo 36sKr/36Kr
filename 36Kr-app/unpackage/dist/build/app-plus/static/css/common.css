@@ -1,0 +1,22 @@
+/* 配置flex */
+.flex{
+	display: flex;
+}
+.flex-center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.flex-ends{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+/* 配置图标 */
+.uni-btn-icon{
+	display: inline-block;
+	vertical-align: middle;
+}
+.uni-tab-bar .list{
+	width: 100%!important;
+}
